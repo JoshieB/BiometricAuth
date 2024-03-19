@@ -11,6 +11,11 @@
 		2933D05A2BA8FA3900C84EBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2933D0592BA8FA3900C84EBB /* ContentView.swift */; };
 		2933D05C2BA8FA3B00C84EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2933D05B2BA8FA3B00C84EBB /* Assets.xcassets */; };
 		2933D05F2BA8FA3B00C84EBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2933D05E2BA8FA3B00C84EBB /* Preview Assets.xcassets */; };
+		2933D0672BA8FD0C00C84EBB /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2933D0662BA8FD0C00C84EBB /* Title.swift */; };
+		2933D0692BA8FD5A00C84EBB /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2933D0682BA8FD5A00C84EBB /* PrimaryButton.swift */; };
+		2933D06C2BA8FDE900C84EBB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2933D06B2BA8FDE900C84EBB /* LoginView.swift */; };
+		2933D06E2BA9115400C84EBB /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2933D06D2BA9115400C84EBB /* AuthenticationManager.swift */; };
+		2933D0702BA91DAD00C84EBB /* CredentialsLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2933D06F2BA91DAD00C84EBB /* CredentialsLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		2933D0592BA8FA3900C84EBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2933D05B2BA8FA3B00C84EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2933D05E2BA8FA3B00C84EBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2933D0662BA8FD0C00C84EBB /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		2933D0682BA8FD5A00C84EBB /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		2933D06B2BA8FDE900C84EBB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2933D06D2BA9115400C84EBB /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		2933D06F2BA91DAD00C84EBB /* CredentialsLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsLoginView.swift; sourceTree = "<group>"; };
+		2933D0712BA920A800C84EBB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +46,7 @@
 		2933D04B2BA8FA3800C84EBB = {
 			isa = PBXGroup;
 			children = (
+				2933D0712BA920A800C84EBB /* README.md */,
 				2933D0562BA8FA3900C84EBB /* BiometricAuth */,
 				2933D0552BA8FA3900C84EBB /* Products */,
 			);
@@ -51,10 +63,12 @@
 		2933D0562BA8FA3900C84EBB /* BiometricAuth */ = {
 			isa = PBXGroup;
 			children = (
+				2933D06A2BA8FDD900C84EBB /* Views */,
+				2933D0652BA8FCF800C84EBB /* Components */,
 				2933D0572BA8FA3900C84EBB /* BiometricAuthApp.swift */,
-				2933D0592BA8FA3900C84EBB /* ContentView.swift */,
 				2933D05B2BA8FA3B00C84EBB /* Assets.xcassets */,
 				2933D05D2BA8FA3B00C84EBB /* Preview Content */,
+				2933D06D2BA9115400C84EBB /* AuthenticationManager.swift */,
 			);
 			path = BiometricAuth;
 			sourceTree = "<group>";
@@ -65,6 +79,25 @@
 				2933D05E2BA8FA3B00C84EBB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2933D0652BA8FCF800C84EBB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2933D0662BA8FD0C00C84EBB /* Title.swift */,
+				2933D0682BA8FD5A00C84EBB /* PrimaryButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2933D06A2BA8FDD900C84EBB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2933D0592BA8FA3900C84EBB /* ContentView.swift */,
+				2933D06B2BA8FDE900C84EBB /* LoginView.swift */,
+				2933D06F2BA91DAD00C84EBB /* CredentialsLoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2933D05A2BA8FA3900C84EBB /* ContentView.swift in Sources */,
+				2933D0672BA8FD0C00C84EBB /* Title.swift in Sources */,
+				2933D0702BA91DAD00C84EBB /* CredentialsLoginView.swift in Sources */,
+				2933D0692BA8FD5A00C84EBB /* PrimaryButton.swift in Sources */,
+				2933D06E2BA9115400C84EBB /* AuthenticationManager.swift in Sources */,
+				2933D06C2BA8FDE900C84EBB /* LoginView.swift in Sources */,
 				2933D0582BA8FA3900C84EBB /* BiometricAuthApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,13 +310,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BiometricAuth/Preview Content\"";
+				DEVELOPMENT_TEAM = 97Z5A5D22G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to login to the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,13 +341,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BiometricAuth/Preview Content\"";
+				DEVELOPMENT_TEAM = 97Z5A5D22G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to login to the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
